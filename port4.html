@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Vanita Port</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: white;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        nav {
+            margin-top: 0px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(18, 18, 62);
+        }
+        
+        nav ul {
+            display: flex;
+            color: white;
+        }
+        
+        li {
+            margin: 0 23px;
+            list-style: none;
+            font-size: medium;
+            color: white;
+        }
+        
+        li:hover {
+            cursor: pointer;
+            text-transform: uppercase;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            animation: listhover1s;
+        }
+        
+        .left {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 24px;
+            cursor: -moz-grab;
+            color: white;
+        }
+        
+        .left:hover {
+            color: white;
+        }
+        
+        .divsection {
+            display: flex;
+            justify-content: space-around;
+            margin: 34px 0;
+        }
+        
+        .divsection div {
+            width: 30%;
+        }
+        
+        .divsection div img {
+            display: inline-block;
+            margin-left: 56px;
+            margin-top: 12px;
+            width: 244px;
+        }
+        
+        .leftsection {
+            /* background-color: rgb(76, 71, 71, 0.288); */
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            height: fit-content;
+        }
+        
+        .techsection {
+            text-align: center;
+        }
+        
+        .techsection h1 {
+            margin-top: 23px;
+            text-align: center;
+            font-weight: 500;
+            display: inline-block;
+        }
+        
+        .techsection h1:hover {
+            animation: listhover 1s;
+            cursor: grabbing;
+            filter: blur(12);
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        
+        .maintech div {
+            display: inline;
+            animation: listhover 5s infinite;
+            text-transform: uppercase;
+            cursor: grabbing;
+            padding: 140px;
+            font-size: 25px;
+        }
+        /* .maintech {
+            display: inline;
+        } */
+        
+        .maintech div:hover {
+            color: orangered;
+        }
+        
+        .handle {
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .handle div {
+            margin-top: 45px;
+            cursor: pointer;
+            height: fit-content;
+            align-self: center;
+        }
+        
+        .handle div:hover {
+            animation: img 0.5s reverse;
+            image-orientation: 360deg;
+        }
+        
+        .right ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        
+        .rightul li a:hover {
+            animation: listhover 1s alternate-reverse;
+        }
+        
+        .gift {
+            display: inline;
+            background-color: white;
+            height: 30px;
+            margin-top: 56px;
+            filter: invert();
+        }
+        
+        #vanita {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+        }
+        
+        #x {
+            filter: invert();
+        }
+        /* #lk {
+            filter: invert()
+        } */
+        
+        @keyframes listhover {
+            100% {
+                color: orangered
+            }
+        }
+        
+        @keyframes img {
+            10% {
+                width: 100px;
+            }
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        #vanita {
+            text-align: left;
+        }
+        
+        #name {
+            color: orangered;
+            text-align: left;
+        }
+        
+        .v {
+            text-align: left;
+        }
+        
+        nav div ul li a:hover {
+            color: orangered;
+        }
+        
+        #hire {
+            /* -webkit-box-reflect: : below 1px linear-gradient(transparent, orangered); */
+            background-color: orangered;
+            height: 40px;
+            width: 80px;
+            border-radius: 5px;
+            border: none;
+            display: inline;
+            align-items: start;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        
+        #hire:hover {
+            background-color: red;
+            color: white;
+        }
+        
+        #resume {
+            background-color: orangered;
+            height: 40px;
+            width: 120px;
+            border-radius: 5px;
+            border: none;
+            display: inline;
+            align-items: start;
+            margin-left: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        
+        .leftsection button a:hover {
+            background-color: red;
+            color: white;
+        }
+        
+        h1 {
+            padding-bottom: 12px;
+        }
+        
+        .leftsection button a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vanita Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href=" #Home ">Home</a></li>
+                    <li><a href=" #About ">About</a></li>
+                    <li><a href="Services.html ">Services</a></li>
+                    <li><a href="Contact.html ">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- nav ends  -->
+    <main>
+        <section class="divsection ">
+            <div class="leftsection ">
+                <h6>
+                    <h4 id="vanita"><br><br> Hello I'm</h4>
+                    <h2 id="name"> Vanita Patle</h2>
+                    <br>
+                    <p class="v">My name is Vanita Patle and I enjoy creating things that live on the in internet.My intrest in web development started back in 2022 when I decided to try editing custom Tumblr themes.I believe my career as a developer.
+                        <br><br> I'm currently attending Savitribai Phule University, from Pune District Education and Association college of engineering as a Information Technology major.</p>
+                    <br>
+                    <br>
+                    <br>
+                    <button id="hire">Hire me</button>
+                    <button id="resume"><a href="./vanita resume final (1).pdf ">Download CV
+                        <i class="fa-solid fa-download"></i></a>
+                    </button>
+                </h6>
+            </div>
+            <div class="rightsection ">
+                <img src="my.jpg " height="400px " alt=" ">
+            </div>
+        </section>
+        <!-- <hr> -->
+        <!-- <section class="techsection "></section> -->
+        <!-- <section class="maintech ">
+            <div>HTML</div>
+            <div>CSS</div>
+            <div>Javascript</div>
+            <div> BOOTSTRAP-5</div>
+        </section> -->
+        <hr>
+        <section class="techsection ">
+            <h1>Follow on</h1>
+            <hr>
+        </section>
+        <section class="handle ">
+            <div id="lk ">
+                <a href="https://www.linkedin.com/in/vanita-patle-1864b7278?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "><img src="lk.png " height="130px " alt=" "></a>
+            </div>
+            <div id="tw">
+                <a href="https://twitter.com/PatleVanita"><img src="twit.png " height="80px " alt=" "></a>
+            </div>
+            <div id="in">
+                <a href="https://www.instagram.com/vanita_patle?igsh=MTZ2enNhcnJ2eTN5ZA==">
+                    <img src="in.png " height="50px " alt=" "></a>
+
+            </div>
+            <div id="github">
+                <a href="https://github.com/settings/profile">
+                    <img src="github-mark.png" alt="" height="80px ">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+</body>
+
+</html>
